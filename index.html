@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Ingresar el nombre de usuario </title>
+	<title>Tiendas Tec.S</title>
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="fondo.css"/>
+<script>
+function comprobarClave(){
+	clave1= document.f1.clave1.value
+	clave2= document.f1.clave2.value
+	if(clave1=="samuel" && clave2=="ramirez"){
+		alert("Las contraseñas coinciden...\n Adelante");
+		var href = "ventas.html";
+		window.location=href;
+}
+else{
+	alert("las contraseñas ingresadas son diferentes..\n vuelve a intentarlo otra vez.");
+	var href= "dos.html";
+	window.location=href;
+	};
+}
+
+</script>
+</head>
+<body>
+<hr color="black">
+<center><h1> Validar  contraseña y la repeticion de la contraseña  </h1></center>
+<hr color="black">
+<h2> Escribe la contraseña , una en cada campo y pulsa el boton, javascript te dira si son iguales</h2>
+<br>
+<p>La contraseña es <b>"samuel"</b> </p>
+<p>Escribe <b>"ramirez"</b> en Repite la contraseña </p>
+<form action="" name="f1">
+<p>Contraseña: <input type="password" name="clave1" size =20"> </p>
+<br>
+<p>Repite la contraseña: <input type="password" name="clave2" size =20"> </p>
+<br>
+<input type="button" value="comprobar" onClick="comprobarClave()"> 
+</form>
+</body>
+</html>
